@@ -3,7 +3,7 @@ DATABASES = {
         'DBTYPE': 'mysql',
         'dbname': 'game',
         'username': "root",
-        'password': "QazWsx123.",
+        'password': "XXX",
         'host': 'localhost'
     }
 }
