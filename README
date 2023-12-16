@@ -10,3 +10,4 @@ SCD2 metadata – eff_start_date, eff_end_date, and is_current are designed to m
 eff_start_date and eff_end_date contain the time interval when the record is effective.
 
 MySQL version: 8.0.29
+settings.py contains connection settings
