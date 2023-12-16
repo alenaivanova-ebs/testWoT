@@ -1,4 +1,4 @@
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_insertrows_data`()
+CREATE PROCEDURE `sp_insertrows_data`()
 BEGIN
 DECLARE i INT DEFAULT 1;
 DROP TABLE IF EXISTS game.task2;
