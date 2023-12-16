@@ -7,13 +7,13 @@ class LocalTemplateProvider:
     template_folder = os.path.join(
         os.path.dirname(os.path.abspath(__file__)), "./sql"
     )
-    print(template_folder)
+
 
     def get_template(self, template):
         full_sql_path = os.path.join(self.template_folder, template)
-        print(full_sql_path)
+
         with open(full_sql_path, "r") as sql_file:
-            print(sql_file)
+
             return sql_file.read()
 
 
