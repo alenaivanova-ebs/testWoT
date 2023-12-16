@@ -1,0 +1,12 @@
+Tables:
+stg_battle - staging tables where all snapshots of data will be loaded, sys_load_date = batch_date (unique for every job execution)
+battle - dictionary that keeps current and historical data over time (scd2 type dimension)
+
+Columns description:
+battle_sid (surrogate key), generated automatically. It’s used as a foreign key in the fact table.
+battle_id - business key coming from the source system.
+attributes – type (battle type), name (battle name)
+SCD2 metadata – eff_start_date, eff_end_date, and is_current are designed to manage the state of the record.
+eff_start_date and eff_end_date contain the time interval when the record is effective.
+
+MySQL version: 8.0.29
